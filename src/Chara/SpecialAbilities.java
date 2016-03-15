@@ -5,4 +5,6 @@ package Chara;
  */
 public enum SpecialAbilities {
     SHIELD_OF_YAGNI, THUNDER_STANCE, SHIELD_OF_KALAMIS, SPELL_BOOST, SHIELD_OF_ALAZAR, BLESS_OF_GOD;
+
+
 }

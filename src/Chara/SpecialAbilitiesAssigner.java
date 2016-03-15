@@ -25,4 +25,10 @@ public class SpecialAbilitiesAssigner {
         else
             creature.setSpecialAbility(SpecialAbilities.SHIELD_OF_ALAZAR);
     }
+
+    public void useSpecialAbility(){
+        creature.getSpecialAbility();
+    }
+
+
 }

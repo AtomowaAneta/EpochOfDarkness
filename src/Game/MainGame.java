@@ -18,8 +18,8 @@ public class MainGame {
     static Scanner scan = new Scanner(System.in);
     static Creature userCharacter;
     static Land trainingLand;
-    static EnemyGenerator enemyGenerator;
-    static Fight fight;
+    static Enemy enemy;
+    static Fight fight = new Fight();
 
 
     public static void chooseName(){
@@ -54,9 +54,9 @@ public class MainGame {
         userCharacter = chooseCharacter();
         chooseName();
         System.out.println(userCharacter.getName() + " Prepare for journey");
-        System.out.println("Training enemy:");
-        enemyGenerator.trainingEnemy();
-        System.out.println(enemyGenerator.getCreature().getName() + " ");
-        fight.beginFight(userCharacter, enemyGenerator.getCreature());
+        System.out.println("Train enemy:");
+        enemy = new Enemy();
+        System.out.println(enemy.getName());
+        fight.beginFight(userCharacter, enemy);
     }
 }
